@@ -1,0 +1,205 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: white;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.restaurant {
+    color: var(--Black, #101010);
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu-section-entre {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.button-content {
+    padding: 5px;
+}
+
+.menu-section-plat {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.menu-section-dessert {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.line {
+    display: flex;
+    width: 40px;
+    height: 3px;
+    background: #99E2D0;
+}
+
+h2 {
+    flex-shrink: 0;
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 6%;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: auto;
+}
+
+.ingredients-prix {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingredients {
+    /* display: flex; */
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.prix {
+    text-align: right;
+    margin-top: 1%;
+    font-family: Roboto;
+    margin-bottom: 1%;
+    font-weight: 700;
+}
+
+.menu-sous {
+    font-family: Roboto;
+    font-size: 15.043px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    align-self: stretch;
+    margin-right: 20px;
+}
+
+.restaurant img {
+    width: 100%;
+    height: 956.142px;
+    flex-shrink: 0;
+}
+
+.menu {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    width: 1055px;
+    height: 1205px;
+    border-radius: 20px
+}
+
+footer {
+    display: contents;
+}
+
+.menu-tittle {
+    color: var(--Black, #101010);
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button-menu {
+    text-align: left;
+    width: 634px;
+    align-items: center;
+    border-radius: 15px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 4.01149px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
+.button-commander {
+    width: 186px;
+    height: 50px;
+    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+    color: white;
+    text-align: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 0px 4.01149px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.footer-info {
+    padding-bottom: 30px;
+    display: flex;
+    color: var(--White, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 100%;
+    padding-top: 30px;
+    align-items: flex-end;
+    gap: 16px;
+    flex-shrink: 0;
+    background: var(--Grey, #353535);
+    justify-content: flex-end;
+}
+
+.footer-info span p,
+.footer-info span a {
+    margin-top: 5px;
+
+}
+
+.footer-fa {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.footer-fa i {
+    margin-right: 5px;
+}
+
+.footer-info img {
+    width: 100px;
+    height: auto;
+    margin-right: 2%;
+}

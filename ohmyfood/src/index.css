@@ -1,0 +1,262 @@
+.header {
+    width: 1440px;
+    height: 96px;
+    background: #FFFFFF;
+}
+
+.header-logo {
+    width: 150px;
+    height: 34.2px;
+    padding-left: 55%;
+    text-align: center;
+
+}
+
+.info-localisation {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    padding: 2px;
+    box-sizing: border-box;
+    justify-content: center;
+    background: var(--Grey-2, #EAEAEA);
+}
+
+.localisation {
+    color: var(--Grey, #353535);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.fa-map-marker-alt {
+    padding-right: 10px;
+}
+
+.section-tittle {
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0px 180px;
+    padding-bottom: 30px;
+    padding: 10px;
+
+}
+
+.section-stittle {
+    color: var(--Grey, #353535);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.numero-button {
+    position: relative;
+    left: -55px;
+    border-radius: 10px;
+    padding: 3px;
+    background-color: #9356DC;
+    color: white;
+
+}
+
+.button-explorer {
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+
+}
+
+.body {
+    margin: 0;
+}
+
+.button-fonctionnement {
+    display: flex;
+    padding: 50px;
+    padding-left: 180px;
+}
+
+.button-fonctionnement button {
+    width: 322.49px;
+    height: 72.38px;
+    border-radius: 20px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    background: #F6F6F6;
+
+}
+
+.section-fonctionnement {
+    width: 275px;
+    height: 35px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 188px;
+
+
+}
+
+.button-fonctionnement button:last-child {
+    margin-right: 0;
+}
+
+.button-fonctionnement button span.icon {
+    margin-right: 25px;
+}
+
+
+.restaurant {
+    width: 100;
+    height: 28px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: #000;
+    padding-left: 188px;
+    margin-top: px;
+
+
+}
+
+.restaurant-list {
+    background-color: #EAEAEA;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.restaurant-list-card {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+
+}
+
+.card {
+    border-radius: 15px;
+    background-color: white;
+    justify-content: space-between;
+    width: 490px;
+}
+
+.card img {
+    width: 490px;
+    height: 231px;
+    object-fit: cover;
+    background: #FFF;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-txt {
+    margin-left: 15px;
+
+
+}
+
+.card-title {
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 8px;
+}
+
+.card-subtitle {
+    color: #000;
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+
+}
+
+.footer-info {
+    display: flex;
+    color: var(--White, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    height: 15%;
+    padding: 30px 25px;
+    align-items: flex-end;
+    gap: 16px;
+    flex-shrink: 0;
+    background: var(--Grey, #353535);
+    justify-content: flex-end;
+
+
+}
+
+.footer-info span p,
+.footer-info span a {
+    margin-top: 5px;
+
+}
+
+.footer-fa {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.footer-fa i {
+    margin-right: 5px;
+}
+
+.footer-info img {
+    width: 100px;
+    height: auto;
+}
+
+
+
+
+  
+
