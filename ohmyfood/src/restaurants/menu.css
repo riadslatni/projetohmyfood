@@ -126,7 +126,7 @@ h3 {
     align-items: center;
     background: #d3d3d3;
     width: 1055px;
-    height: 1100px;
+    /* height: 1100px; */
     border-radius: 20px;
     gap: 20px;
     margin-top: -60px;
@@ -160,7 +160,7 @@ h3 {
     border-radius: 25px;
     box-shadow: 0px 4.01149px 15px 0px rgba(0, 0, 0, 0.10);
     border: 2px solid transparent;
-
+    margin-bottom: 20px;
 }
 
 button:hover {
