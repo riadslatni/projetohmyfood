@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0px;
 }
 
 header {
@@ -41,6 +42,19 @@ header {
     font-weight: 300;
     line-height: normal;
     text-transform: uppercase;
+}
+
+.coeurbutton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.coeurbutton:focus {
+    color: lightcoral;
 }
 
 .button-content {
@@ -92,9 +106,9 @@ h3 {
 }
 
 .ingredients {
-    /* display: flex; */
     margin-top: 1%;
     margin-bottom: 1%;
+    font-family: Roboto;
 }
 
 .prix {
@@ -105,18 +119,9 @@ h3 {
     font-weight: 700;
 }
 
-.menu-sous {
-    font-family: Roboto;
-    font-size: 15.043px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    align-self: stretch;
-    margin-right: 20px;
-}
 
 .menu {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     background: #d3d3d3;
@@ -124,11 +129,7 @@ h3 {
     height: 1100px;
     border-radius: 20px;
     gap: 20px;
-    margin-top: -40px;
-}
-
-.footer {
-    display: contents;
+    margin-top: -60px;
 }
 
 .menu-tittle {
@@ -175,14 +176,14 @@ button:hover {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    width: 100%;
     padding-top: 30px;
-    align-items: flex-end;
     gap: 16px;
-    flex-shrink: 0;
     background: var(--Grey, #353535);
-    justify-content: flex-end;
+    justify-content: end;
+
 }
+
+
 
 .footer-info span p,
 .footer-info span a {
@@ -204,18 +205,20 @@ button:hover {
     width: 100px;
     height: auto;
     margin-right: 2%;
+    margin-left: 100px;
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     .restaurant {
-     /* margin-right: 180px;  */
-    /* margin-bottom: 0px; */
+        /* margin-right: 180px;  */
+        /* margin-bottom: 0px; */
     }
+
     .restaurant img {
-        width: 640px; 
+        width: 640px;
     }
-    
+
     .menu {
         width: 100%;
         height: 1050px;
@@ -225,9 +228,9 @@ button:hover {
         border-bottom-right-radius: 0px;
     }
 
-.h2-entree {
-    margin-top: 0px;
-}
+    .h2-entree {
+        margin-top: 0px;
+    }
 
     .button-menu {
         display: flex;
@@ -253,14 +256,33 @@ button:hover {
     }
 
     .footer-info {
+        width: ;
+        padding-bottom: 30px;
         display: flex;
+        color: var(--White, #FFF);
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding-top: 30px;
+        align-items: flex-end;
+        gap: 16px;
+        flex-shrink: 0;
+        background: var(--Grey, #353535);
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px 20px;
-        width: 410px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
 
-    .footer-info img {}
+    img {
+        order: -1;
+        margin-bottom: 22px;
+
+    }
+
 
     .footer-info span {
         margin-bottom: 5px;
