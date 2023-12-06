@@ -169,7 +169,7 @@ body {
     font-weight: 700;
     line-height: normal;
     padding-top: 25px;
-    margin-left: 610px;
+    margin-left: 9%;
 }
 
 .button-fonctionnement button:last-child {
@@ -198,8 +198,8 @@ body {
     font-weight: 700;
     line-height: 28px;
     letter-spacing: 0em;
-    padding-left: 26.5%;
-
+    /* padding-left: 26.5%; */
+    margin-left:10.5%;
 }
 
 .restaurant-list {
@@ -213,9 +213,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
-    gap: 60px;
+    row-gap: 60px;
     width: 1190px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .restaurant-card {
@@ -496,8 +496,7 @@ i.far.fa-heart {
 
 
     .restaurant-card-coeur button {
-        margin-left: 530px;
-
+        margin-left: 400px;
     }
 
     .card {
@@ -511,6 +510,7 @@ i.far.fa-heart {
 
     .restaurant {
         padding-left: 20px;
+        margin-left: 0%;
     }
 
     .restaurant-list {
@@ -529,6 +529,11 @@ i.far.fa-heart {
         display: flex;
         flex-direction: column;
         gap: 5px;
+    
+    }
+
+    .footer-info img{
+        margin-left: 0px;
     }
 
     img {
