@@ -7,13 +7,13 @@
    <!-- <link rel="stylesheet" href="SASS/mains.scss"> -->
    <link rel="stylesheet" href="index.css">
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+SansRoboto">
    <title>OhMyFood - Accueil</title>
 </head>
 
 <body>
    <header class="header">
-      <img src="logos/ohmyfood.png" alt="logo ohmyfood"></img>
+      <img src="logos/ohmyfood.png" alt="logo ohmyfood">
    </header>
    <div class="info-localisation">
       <i class="fa fa-map-marker-alt"></i>
@@ -78,10 +78,13 @@
                         </div>
                      </div>
                   </a>
-                  <div class="restaurant-card-coeur">
-                     <button type="button" class="coeurbutton">
+
+                  <div class="container">
+                     <input type="checkbox" id="heart-checkbox" class="heart-checkbox" />
+                     <label for="heart-checkbox" class="heart">
                         <i class="far fa-heart"></i>
-                     </button>
+                        <i class="fas fa-heart heart-color"></i>
+                     </label>
                   </div>
                </article>
 
@@ -100,10 +103,12 @@
                         </div>
                      </div>
                   </a>
-                  <div class="restaurant-card-coeur">
-                     <button type="button" class="coeurbutton">
+                  <div class="container">
+                     <input type="checkbox" id="heart-checkbox1" class="heart-checkbox" />
+                     <label for="heart-checkbox1" class="heart">
                         <i class="far fa-heart"></i>
-                     </button>
+                        <i class="fas fa-heart heart-color"></i>
+                     </label>
                   </div>
                </article>
 
@@ -118,10 +123,12 @@
                         </div>
                      </div>
                   </a>
-                  <div class="restaurant-card-coeur">
-                     <button type="button" class="coeurbutton">
+                  <div class="container">
+                     <input type="checkbox" id="heart-checkbox2" class="heart-checkbox" />
+                     <label for="heart-checkbox2" class="heart">
                         <i class="far fa-heart"></i>
-                     </button>
+                        <i class="fas fa-heart heart-color"></i>
+                     </label>
                   </div>
                </article>
 
@@ -135,10 +142,12 @@
                         </div>
                      </div>
                   </a>
-                  <div class="restaurant-card-coeur">
-                     <button type="button" class="coeurbutton">
+                  <div class="container">
+                     <input type="checkbox" id="heart-checkbox3" class="heart-checkbox" />
+                     <label for="heart-checkbox3" class="heart">
                         <i class="far fa-heart"></i>
-                     </button>
+                        <i class="fas fa-heart heart-color"></i>
+                     </label>
                   </div>
                </article>
             </div>
@@ -149,11 +158,12 @@
       <div class="footer-info">
          <span class="footer-fa">
             <i class=" fas fa-utensils "></i>
-            <p class="footer-restaurant"></p> Proposer un restaurant</p>
+            <p class="footer-restaurant"></p> Proposer un restaurant
          </span>
+         <span class="footer-restaurant"></span>
          <span class="footer-fa">
             <i class="fas fa-hands-helping"></i>
-            <p class="footer-restaurant"></p> Devenir partenaire</p>
+            Devenir partenaire
          </span>
          <span>
             <a>Mentions légales</a>

@@ -1,3 +1,63 @@
+
+ 
+   .heart-checkbox {
+    display: none; /* Hide the checkbox */
+  }
+  
+  /* Style for the unchecked state */
+  .heart .fas {
+    display: none; /* Hide the solid heart initially */
+  }
+  
+  /* Style for the checked state */
+  .heart-checkbox:checked + .heart .far {
+    display: none; /* Hide the regular heart when checked */
+  }
+  
+  .heart-checkbox:checked + .heart .fas {
+    display: inline; /* Show the solid heart when checked */
+  }
+  
+  .fa-heart {
+    font-size: 30px;
+  }
+  
+  .container {
+    font-size: 24px;
+    position: relative;
+    bottom: 70px;
+    margin-left: 430px;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .heart {
+    position:relative;
+    z-index:1;
+    cursor: pointer;
+    -webkit-text-stroke: 2px white;
+  }
+  
+  .heart-color {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1;
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity:0;
+    transform: scale(0);
+    transition:.3s ease;
+  }
+  
+  /* Modify this part to show the heart-color when checked */
+  .heart-checkbox:checked + .heart .heart-color {
+    opacity:1;
+    transform: scale(1);
+  }
+  
 body {
     margin: 0px;
 }
@@ -169,7 +229,7 @@ body {
     font-weight: 700;
     line-height: normal;
     padding-top: 25px;
-    margin-left: 9%;
+    margin-left: 21%;
 }
 
 .button-fonctionnement button:last-child {
@@ -199,7 +259,7 @@ body {
     line-height: 28px;
     letter-spacing: 0em;
     /* padding-left: 26.5%; */
-    margin-left:10.5%;
+    margin-left: 22%;
 }
 
 .restaurant-list {
@@ -242,16 +302,6 @@ body {
 }
 
 
-.coeurbutton {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
-}
-
-.coeurbutton:focus {
-    color: lightcoral;
-}
 
 .texte-nouveau {
     display: flex;
@@ -268,16 +318,8 @@ body {
     border: none;
     padding: 0;
     cursor: pointer;
-}
 
-.restaurant-card-coeur button:active i.far.fa-heart .restaurant-card-coeur button:focus i.far.fa-heart {
-    color: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
 }
-
-i.far.fa-heart {
-    font-size: 24px;
-}
-
 
 .card {
     border-radius: 15px;
@@ -365,9 +407,125 @@ i.far.fa-heart {
 }
 
 /****** Media queries ***********/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .restaurant {
+        margin-left: 2%;
+    }
+
+}
+
+/****** Media queries ***********/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* Header et Info Localisation */
+    .header {
+        height: auto;
+        padding: 10px;
+    }
+
+    .info-localisation {
+        height: auto;
+        padding: 10px;
+        text-align: left;
+    }
+
+    /* Section Titre */
+    .section-tittle {
+        padding: 0 20px;
+    }
+
+    /* Boutons de Fonctionnement */
+    .button-fonctionnement {
+        padding-left: 20px;
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .button-fonctionnement .num-bouton {
+        width: auto;
+    }
+
+    .section-fonctionnement {
+        width: 100%;
+        height: 35px;
+        color: #000;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 25px;
+        margin-left: 0;
+    }
+
+    /* Restaurant Cards */
+    .restaurant-card {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .restaurant-card--image {
+        position: unset;
+        width: 80px;
+        height: 25px;
+        top: 14px;
+        border-radius: 2px;
+        background: var(--Green, #99E2D0);
+        color: var(--Green-Font, #008766);
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .position-texte-nouveau {
+        display: flex;
+    }
+
+    .texte-nouveau {
+        display: flex;
+        position: absolute;
+        margin-right: 120px;
+        justify-content: center;
+        margin-top: 15px;
+        background: var(--Green, #99E2D0);
+        color: var(--Green-Font, #008766);
+    }
+
+    /* Footer */
+    .footer-info {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .footer-info img {
+        margin-left: 0;
+    }
+
+    img {
+        order: -1;
+        margin-bottom: 22px;
+    }
+
+    .footer-info span {
+        margin-bottom: 5px;
+    }
+}
+
+/****** Media queries ***********/
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    .container{
+        margin-left: 390px;
+      }
 
     .header {
         height: auto;
@@ -529,17 +687,17 @@ i.far.fa-heart {
         display: flex;
         flex-direction: column;
         gap: 5px;
-    
+
     }
 
-    .footer-info img{
+    .footer-info img {
         margin-left: 0px;
     }
 
     img {
         order: -1;
         margin-bottom: 22px;
-        
+
     }
 
     .footer-info span {
