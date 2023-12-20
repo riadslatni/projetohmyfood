@@ -22,9 +22,15 @@
     </div>
 
     <div class="menu">
-        <div>
-            <p class="restaurant"> La palette du goût <button type="button" class="coeurbutton"><i
-                        class="far fa-heart"></i></button></p>
+        <div class="menu-top">
+            <p class="restaurant"> La palette du goût</p>
+            <div class="container">
+                <input type="checkbox" id="heart-checkbox1" class="heart-checkbox" />
+                <label for="heart-checkbox1" class="heart">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-heart heart-color"></i>
+                </label>
+            </div>
         </div>
         <div class="menu-section-entre">
             <div>
@@ -36,10 +42,14 @@
                     <h3>Fricassée d'escargots</h3>
                     <div class="ingredients-prix">
                         <p class="ingredients">piment d'Espelette</p>
-                        <p class="prix">25€</p>
+                        <div class="prix-hover">
+                            <p class="prix">25€</p>
+                        </div>
                     </div>
                 </div>
             </button>
+
+
             <button class="button-menu">
                 <div class="button-content">
                     <h3>Foie gras de canard mi-cuit</h3>

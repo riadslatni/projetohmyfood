@@ -1,21 +1,19 @@
 
  
    .heart-checkbox {
-    display: none; /* Hide the checkbox */
+    display: none;
   }
   
-  /* Style for the unchecked state */
   .heart .fas {
-    display: none; /* Hide the solid heart initially */
+    display: none;
   }
   
-  /* Style for the checked state */
   .heart-checkbox:checked + .heart .far {
-    display: none; /* Hide the regular heart when checked */
+    display: none; 
   }
   
   .heart-checkbox:checked + .heart .fas {
-    display: inline; /* Show the solid heart when checked */
+    display: inline;
   }
   
   .fa-heart {
@@ -52,7 +50,6 @@
     transition:.3s ease;
   }
   
-  /* Modify this part to show the heart-color when checked */
   .heart-checkbox:checked + .heart .heart-color {
     opacity:1;
     transform: scale(1);
