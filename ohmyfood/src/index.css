@@ -1,19 +1,17 @@
-/* Center the loader horizontally and vertically */
 .loader-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  position: fixed; /* Fixes the loader in place */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background behind the loader */
-  animation: fadeOut 2s ease-in-out forwards; /* Add a fade-out animation */
+  background-color: rgba(255, 255, 255, 0.8);
+  animation: fadeOut 2s ease-in-out forwards;
 }
 
-/* Style for the loader */
 .loader {
   border: 4px solid #f3f3f3;
   border-top: 4px solid #3498db;
@@ -23,35 +21,31 @@
   animation: spin 2s linear infinite;
 }
 
-/* Loader animation */
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
-/* Fade-out animation for the loader container */
 @keyframes fadeOut {
-  0% { opacity: 1; }
-  100% { opacity: 0; display: none; }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
-
-
-
-
-
-
-
-
-.heart-checkbox,
-.heart .fas {
+.heart-checkbox, .heart .fas {
   display: none;
 }
 
-.heart-checkbox:checked+.heart .far {
+.heart-checkbox:checked + .heart .far {
   display: none;
 }
-
-.heart-checkbox:checked+.heart .fas {
+.heart-checkbox:checked + .heart .fas {
   display: inline;
 }
 
@@ -89,7 +83,7 @@
   transition: 0.3s ease;
 }
 
-.heart-checkbox:checked+.heart .heart-color {
+.heart-checkbox:checked + .heart .heart-color {
   opacity: 1;
   transform: scale(1);
 }
@@ -209,7 +203,6 @@ body {
   padding-bottom: 45px;
   justify-content: center;
 }
-
 .button-fonctionnement .num-bouton {
   width: 322.49px;
   height: 72.38px;
@@ -247,7 +240,6 @@ body {
 .button-fonctionnement button:last-child {
   margin-right: 0;
 }
-
 .button-fonctionnement button span.icon {
   margin-right: 27px;
 }
@@ -333,7 +325,6 @@ body {
   width: 490px;
   height: 330px;
 }
-
 .card img {
   width: 100%;
   height: 231px;
@@ -385,9 +376,7 @@ body {
   background: var(--Grey, #353535);
   justify-content: flex-end;
 }
-
-.footer-info span p,
-.footer-info span a {
+.footer-info span p, .footer-info span a {
   margin-top: 5px;
 }
 
@@ -396,7 +385,6 @@ body {
   align-items: center;
   margin-right: 20px;
 }
-
 .footer-fa i {
   margin-right: 5px;
 }
@@ -416,27 +404,22 @@ body {
     height: auto;
     padding: 10px;
   }
-
   .info-localisation {
     height: auto;
     padding: 10px;
     text-align: left;
   }
-
   .section-tittle {
     padding: 0 20px;
   }
-
   .button-fonctionnement {
     padding-left: 20px;
     margin-left: 0;
     flex-direction: column;
   }
-
   .button-fonctionnement .num-bouton {
     width: auto;
   }
-
   .section-fonctionnement {
     width: 100%;
     height: 35px;
@@ -449,16 +432,13 @@ body {
     padding-top: 25px;
     margin-left: 0;
   }
-
   .restaurant {
     margin-left: 2%;
   }
-
   .restaurant-card {
     margin-left: 20px;
     margin-right: 20px;
   }
-
   .restaurant-card--image {
     position: unset;
     width: 0px;
@@ -476,11 +456,9 @@ body {
     display: flex;
     justify-content: center;
   }
-
   .position-texte-nouveau {
     display: flex;
   }
-
   .texte-nouveau {
     display: flex;
     position: absolute;
@@ -493,52 +471,42 @@ body {
     height: 20px;
     align-items: center;
   }
-
   .footer-info {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
-
   .footer-info img {
     margin-left: 0;
   }
-
   img {
     order: -1;
     margin-bottom: 22px;
   }
-
   .footer-info span {
     margin-bottom: 5px;
   }
 }
-
 @media (max-width: 767.98px) {
   .container {
     margin-left: 400px;
   }
-
   .header {
     height: auto;
     padding: 10px;
   }
-
   .info-localisation {
     height: auto;
     padding: 10px;
     text-align: left;
   }
-
-
   .infos {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
   }
-
   .section-tittle {
     color: #000;
     text-align: center;
@@ -554,11 +522,9 @@ body {
     padding-top: 39px;
     padding: 0 20px;
   }
-
   .button-fonctionnement .num-bouton {
     width: auto;
   }
-
   .restaurant-card--image {
     position: unset;
     width: 80px;
@@ -576,18 +542,15 @@ body {
     display: flex;
     justify-content: center;
   }
-
   .position-texte-nouveau {
     display: flex;
   }
-
   p.texte-nouveau {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
   }
-
   .texte-nouveau {
     display: flex;
     position: absolute;
@@ -597,23 +560,19 @@ body {
     background: var(--Green, #99E2D0);
     color: var(--Green-Font, #008766);
   }
-
   .texte-bouton {
     padding: 20px;
   }
-
   .button-fonctionnement {
     padding-left: 20px;
     margin-left: 0;
     flex-direction: column;
   }
-
   .button-fonctionnement button {
     width: 100%;
     margin-right: 0;
     margin-bottom: 10px;
   }
-
   .section-fonctionnement {
     width: 275px;
     height: 35px;
@@ -626,63 +585,49 @@ body {
     padding-top: 25px;
     margin-left: 0px;
   }
-
   .restaurant-card {
     margin-left: 20px;
     flex-direction: column;
     margin-left: 20px;
     margin-right: 20px;
   }
-
   .restaurant-card-coeur button {
     margin-left: 400px;
   }
-
   .card {
     width: 100%;
   }
-
   .card img {
     height: 231px;
     flex-shrink: 0;
   }
-
   .restaurant {
     padding-left: 20px;
     margin-left: 0%;
   }
-
   .restaurant-list {
     padding-left: 0px;
     padding-bottom: 40px;
   }
-
   .restaurant-list-card {
     width: auto;
     flex-direction: column;
     gap: 20px;
   }
-
   .footer-info {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
-
   .footer-info img {
     margin-left: 0px;
   }
-
   img {
     order: -1;
     margin-bottom: 22px;
   }
-
   .footer-info span {
     margin-bottom: 5px;
   }
-
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

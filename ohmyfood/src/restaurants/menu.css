@@ -120,8 +120,7 @@ header {
   line-height: normal;
 }
 .restaurant img {
-  width: 99vw;
-  height: 50vh;
+  width: 100%;
   flex-shrink: 0;
 }
 
@@ -317,6 +316,11 @@ h3 {
   margin-left: 33%;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu, .footer-info {
+    width: 1000px;
+  }
+}
 @media (max-width: 767.98px) {
   .header-logo-arrow img {
     margin-left: 20%;
@@ -396,5 +400,4 @@ h3 {
   .button-content {
     width: 441px;
   }
-}
-/*# sourceMappingURL=menu.css.map */
+}/*# sourceMappingURL=menu.css.map */

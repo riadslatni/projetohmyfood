@@ -332,6 +332,12 @@ h3 {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu, .footer-info {
+    width: 1000px;
+  }
+}
+
 @media (max-width: 767.98px) {
   .header-logo-arrow {
     img {
@@ -428,5 +434,3 @@ h3 {
     width: 441px;
   }
 }
-
-/*# sourceMappingURL=menu.css.map */
