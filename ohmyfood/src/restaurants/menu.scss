@@ -1,8 +1,9 @@
-.heart-checkbox, .heart .fas {
+.heart-checkbox,
+.heart .fas {
   display: none;
 }
 
-.heart-checkbox:checked + .heart {
+.heart-checkbox:checked+.heart {
   .far {
     display: none;
   }
@@ -40,11 +41,12 @@
   cursor: pointer;
 }
 
-.heart-checkbox, .heart .fas {
+.heart-checkbox,
+.heart .fas {
   display: none;
 }
 
-.heart-checkbox:checked + .heart {
+.heart-checkbox:checked+.heart {
   .far {
     display: none;
   }
@@ -94,7 +96,7 @@
   transition: 0.3s ease;
 }
 
-.heart-checkbox:checked + .heart .heart-color {
+.heart-checkbox:checked+.heart .heart-color {
   opacity: 1;
   transform: scale(1);
 }
@@ -126,8 +128,9 @@ header {
   line-height: normal;
 
   img {
-    width: 100%;
-    flex-shrink: 0;
+    width: 98vw;
+    height: 60vh;
+
   }
 }
 
@@ -145,7 +148,8 @@ header {
   text-transform: uppercase;
 }
 
-.menu-section-plat, .menu-section-dessert {
+.menu-section-plat,
+.menu-section-dessert {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -293,7 +297,9 @@ h3 {
   width: 98.5vw;
 
   span {
-    p, a {
+
+    p,
+    a {
       margin-top: 5px;
     }
   }
@@ -333,7 +339,9 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .menu, .footer-info {
+
+  .menu,
+  .footer-info {
     width: 1000px;
   }
 }
@@ -388,7 +396,10 @@ h3 {
     }
   }
 
-  .menu-section-entre h2, .menu-section-plat h2, .menu-section-dessert h2, .line {
+  .menu-section-entre h2,
+  .menu-section-plat h2,
+  .menu-section-dessert h2,
+  .line {
     margin-left: 25px;
   }
 
@@ -417,6 +428,11 @@ h3 {
   img {
     order: -1;
     margin-bottom: 22px;
+   
+  }
+
+  .restaurant img {
+    width: 96vw;
   }
 
   .footer-info {
