@@ -372,12 +372,6 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .restaurant {
-    margin-left: 2%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
   .header {
     height: auto;
     padding: 10px;
@@ -414,6 +408,10 @@ body {
     line-height: normal;
     padding-top: 25px;
     margin-left: 0;
+  }
+
+  .restaurant {
+    margin-left: 2%;
   }
 
   .restaurant-card {
@@ -641,3 +639,5 @@ body {
     margin-bottom: 5px;
   }
 }
+
+/*# sourceMappingURL=index.css.map */
