@@ -13,128 +13,139 @@
 
 <body>
 
-    <header>
+    <header class="header-logo-arrow">
+        <a class="arrow" href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
         <img src="../logos/ohmyfood.png" alt="logo">
     </header>
+    <div class="restaurant">
+        <img src="images/a-la-francaise.jpg" alt="restaurant">
+    </div>
 
-
-    <!-- <div class="restaurant-menu"> -->
-        <div class="restaurant">
-            <img src="images/a-la-francaise.jpg" alt="restaurant">
-        </div>
-
-        <div class="menu">
-            <div>
-                <p class="restaurant"> A la francaise </p>
-            </div>
-            <div class="menu-section-entre">
-                <div>
-                    <h2>Entrées</h2>
-                    <span class="line"></span>
-                </div>
-                <button class="button-menu">
-                    <div class="button-content">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <div class="ingredients-prix">
-                            <p class="ingredients">Aux zestes d'orange</p>
-                            <p class="prix">25€</p>
-                        </div>
-                    </div>
-                </button>
-                <button class="button-menu">
-                    <div class="button-content">
-                        <h3>Velouté de légumes d'antan</h3>
-                        <div class="ingredients-prix">
-                            <p class="ingredients"> Carotte, panais, topinambour</p>
-                            <div class="prix">35€</div>
-                        </div>
-                    </div>
-                </button>
-                <button class="button-menu">
-                    <div class="button-content">
-                        <h3>Soupe à l'oignon</h3>
-                        <div class="ingredients-prix">
-                            <p class="ingredients">Revisitée </p>
-                            <div class="prix">20€</div>
-                        </div>
-                    </div>
-                </button>
-            </div>
-
-            <div class="menu-section-plat">
-                <div>
-                    <h2>Plats</h2>
-                    <span class="line"></span>
-                </div>
-                <button class="button-menu">
-                    <div class="button-content">
-                        <h3>Coquilles Saint-Jacques</h3>
-                        <div class="ingredients-prix">
-                            <p class="ingredients">Accompagnées d'une purée de panais</p>
-                            <div class="prix">40€</div>
-                        </div>
-                    </div>
-                </button>
-                <button class="button-menu">
-                    <div class="button-content">
-                        <h3>Magret de canard</h3>
-                        <div class="ingredients-prix">
-                            <p class="ingredients">Et parmentier de pommes de terre </p>
-                            <div class="prix">35€</div>
-                        </div>
-                    </div>
-                </button>
-                <button class="button-menu">
-                    <div class="button-content">
-                        <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                        <div class="ingredients-prix">
-                            <p class="ingredients">Sur son lit de gnocchis aux légumes </p>
-                            <div class="prix">44€</div>
-                        </div>
-                    </div>
-                </button>
-            </div>
-
-            <div class="menu-section-dessert">
-                <div>
-                    <h2>Desserts</h2>
-                    <span class="line"></span>
-                </div>
-                <button class="button-menu">
-                    <div class="button-content">
-                        <h3>Pétales de violettes glacés</h3>
-                        <div class="ingredients-prix">
-                            <p class="ingredients">Et purée de noisettes </p>
-                            <div class="prix">18€</div>
-                        </div>
-                    </div>
-                </button>
-                <button class="button-menu">
-                    <div class="button-content">
-                        <h3>Fondant au chocolat</h3>
-                        <div class="ingredients-prix">
-                            <p class="ingredients">Revisité</p>
-                            <div class="prix">22€</div>
-                        </div>
-                    </div>
-                </button>
-                <button class="button-menu">
-                    <div class="button-content">
-                        <h3>Millefeuille croustillant</h3>
-                        <div class="ingredients-prix">
-                            <p class="ingredients"> Myrtilles et pâte d’amande </p>
-                            <div class="prix">23€</div>
-                        </div>
-                    </div>
-                </button>
-            </div>
-            <div>
-                <button class="button-commander">Commander</button>
+    <div class="menu">
+        <div class="menu-top">
+            <p class="restaurant"> A la francaise</p>
+            <div class="container">
+                <input type="checkbox" id="heart-checkbox1" class="heart-checkbox" />
+                <label for="heart-checkbox1" class="heart">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-heart heart-color"></i>
+                </label>
             </div>
         </div>
-    <!-- </div> -->
+        <div class="menu-section-entre">
+            <div>
+                <h2 class="h2-entree">Entrées</h2>
+                <span class="line"></span>
+            </div>
+            <button class="button-menu">
+                <div class="button-content">
+                    <h3>Tartare de poulpe acidulé</h3>
+                    <div class="ingredients-prix">
+                        <p class="ingredients">Aux zestes d'orange</p>
+                        <div class="prix-hover">
+                            <p class="prix"> 25€</p>
+                    </div>
+                </div>
+            </button>
+            <button class="button-menu">
+                <div class="button-content">
+                    <h3>Velouté de légumes d'antan</h3>
+                    <div class="ingredients-prix">
+                        <p class="ingredients"> Carotte, panais, topinambour</p>
+                        <div class="prix-hover">
+                            <p class="prix">35€</div>
+                    </div>
+                </div>
+            </button>
+            <button class="button-menu">
+                <div class="button-content">
+                    <h3>Soupe à l'oignon</h3>
+                    <div class="ingredients-prix">
+                        <p class="ingredients">Revisitée </p>
+                        <div class="prix-hover">
+                            <p class="prix">20€</div>
+                    </div>
+                </div>
+            </button>
+        </div>
 
+        <div class="menu-section-plat">
+            <div>
+                <h2>Plats</h2>
+                <span class="line"></span>
+            </div>
+            <button class="button-menu">
+                <div class="button-content">
+                    <h3>Coquilles Saint-Jacques</h3>
+                    <div class="ingredients-prix">
+                        <p class="ingredients">Accompagnées d'une purée de panais</p>
+                        <div class="prix-hover">
+                            <p class="prix">40€</div>
+                    </div>
+                </div>
+            </button>
+            <button class="button-menu">
+                <div class="button-content">
+                    <h3>Magret de canard</h3>
+                    <div class="ingredients-prix">
+                        <p class="ingredients">Et parmentier de pommes de terre </p>
+                        <div class="prix-hover">
+                            <p class="prix">35€</div>
+                    </div>
+                </div>
+            </button>
+            <button class="button-menu">
+                <div class="button-content">
+                    <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                    <div class="ingredients-prix">
+                        <p class="ingredients">Sur son lit de gnocchis aux légumes </p>
+                        <div class="prix-hover">
+                            <p class="prix">44€</div>
+                    </div>
+                </div>
+            </button>
+        </div>
 
+        <div class="menu-section-dessert">
+            <div>
+                <h2>Desserts</h2>
+                <span class="line"></span>
+            </div>
+            <button class="button-menu">
+                <div class="button-content">
+                    <h3>Pétales de violettes glacés</h3>
+                    <div class="ingredients-prix">
+                        <p class="ingredients">Et purée de noisettes </p>
+                        <div class="prix-hover">
+                            <p class="prix">18€</div>
+                    </div>
+                </div>
+            </button>
+            <button class="button-menu">
+                <div class="button-content">
+                    <h3>Fondant au chocolat</h3>
+                    <div class="ingredients-prix">
+                        <p class="ingredients">Revisité</p>
+                        <div class="prix-hover">
+                            <p class="prix">22€</div>
+                    </div>
+                </div>
+            </button>
+            <button class="button-menu">
+                <div class="button-content">
+                    <h3>Millefeuille croustillant</h3>
+                    <div class="ingredients-prix">
+                        <p class="ingredients"> Myrtilles et pâte d’amande </p>
+                        <div class="prix-hover">
+                            <p class="prix">23€</div>
+                    </div>
+                </div>
+            </button>
+        </div>
+        <div>
+            <button class="button-commander">Commander</button>
+        </div>
+    </div>
     <footer>
         <div class="footer-info">
             <span class="footer-fa">

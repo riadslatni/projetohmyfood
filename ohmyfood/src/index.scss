@@ -1,14 +1,15 @@
-.heart-checkbox,
-.heart .fas {
+.heart-checkbox, .heart .fas {
   display: none;
 }
 
-.heart-checkbox:checked+.heart .far {
-  display: none;
-}
+.heart-checkbox:checked + .heart {
+  .far {
+    display: none;
+  }
 
-.heart-checkbox:checked+.heart .fas {
-  display: inline;
+  .fas {
+    display: inline;
+  }
 }
 
 .fa-heart {
@@ -45,7 +46,7 @@
   transition: 0.3s ease;
 }
 
-.heart-checkbox:checked+.heart .heart-color {
+.heart-checkbox:checked + .heart .heart-color {
   opacity: 1;
   transform: scale(1);
 }
@@ -164,23 +165,23 @@ body {
   gap: 15px;
   padding-bottom: 45px;
   justify-content: center;
-}
 
-.button-fonctionnement .num-bouton {
-  width: 322.49px;
-  height: 72.38px;
-  border-radius: 20px;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 19px;
-  letter-spacing: 0em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
-  background: #F6F6F6;
-  border: 2px solid transparent;
+  .num-bouton {
+    width: 322.49px;
+    height: 72.38px;
+    border-radius: 20px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    background: #F6F6F6;
+    border: 2px solid transparent;
+  }
 }
 
 .num-buton {
@@ -200,12 +201,14 @@ body {
   margin-left: 22%;
 }
 
-.button-fonctionnement button:last-child {
-  margin-right: 0;
-}
+.button-fonctionnement button {
+  &:last-child {
+    margin-right: 0;
+  }
 
-.button-fonctionnement button span.icon {
-  margin-right: 27px;
+  span.icon {
+    margin-right: 27px;
+  }
 }
 
 .texte-bouton {
@@ -288,16 +291,16 @@ body {
   justify-content: space-between;
   width: 490px;
   height: 330px;
-}
 
-.card img {
-  width: 100%;
-  height: 231px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  background: #FFF;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  img {
+    width: 100%;
+    height: 231px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: #FFF;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
 }
 
 .card-txt {
@@ -340,21 +343,22 @@ body {
   flex-shrink: 0;
   background: var(--Grey, #353535);
   justify-content: flex-end;
-}
 
-.footer-info span p,
-.footer-info span a {
-  margin-top: 5px;
+  span {
+    p, a {
+      margin-top: 5px;
+    }
+  }
 }
 
 .footer-fa {
   display: inline-flex;
   align-items: center;
   margin-right: 20px;
-}
 
-.footer-fa i {
-  margin-right: 5px;
+  i {
+    margin-right: 5px;
+  }
 }
 
 .footer-info img {
@@ -387,10 +391,10 @@ body {
     padding-left: 20px;
     margin-left: 0;
     flex-direction: column;
-  }
 
-  .button-fonctionnement .num-bouton {
-    width: auto;
+    .num-bouton {
+      width: auto;
+    }
   }
 
   .section-fonctionnement {
@@ -452,10 +456,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
-  }
 
-  .footer-info img {
-    margin-left: 0;
+    img {
+      margin-left: 0;
+    }
   }
 
   img {
@@ -470,7 +474,7 @@ body {
 
 @media (max-width: 767.98px) {
   .container {
-    margin-left: 400px;
+    margin-left: 520px;
   }
 
   .header {
@@ -483,7 +487,6 @@ body {
     padding: 10px;
     text-align: left;
   }
-
 
   .infos {
     display: flex;
@@ -559,12 +562,12 @@ body {
     padding-left: 20px;
     margin-left: 0;
     flex-direction: column;
-  }
 
-  .button-fonctionnement button {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 10px;
+    button {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
   }
 
   .section-fonctionnement {
@@ -592,12 +595,12 @@ body {
   }
 
   .card {
-    width: 100%;
-  }
+    width: auto;
 
-  .card img {
-    height: 231px;
-    flex-shrink: 0;
+    img {
+      height: 231px;
+      flex-shrink: 0;
+    }
   }
 
   .restaurant {
@@ -621,10 +624,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
-  }
 
-  .footer-info img {
-    margin-left: 0px;
+    img {
+      margin-left: 0px;
+    }
   }
 
   img {
@@ -635,7 +638,6 @@ body {
   .footer-info span {
     margin-bottom: 5px;
   }
-
 }
 
 /*# sourceMappingURL=index.css.map */
