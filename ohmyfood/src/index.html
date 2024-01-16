@@ -4,19 +4,18 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="index.css">
-   <link rel="stylesheet" href="menu.css">
-   <link rel="stylesheet" href="menu.scss">
-   <link rel="stylesheet" href="index.scss">
+   <link rel="stylesheet" href="Sass/main.css">
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+SansRoboto">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
    <title>OhMyFood - Accueil</title>
 </head>
 
 <body>
    <div class="loader-container">
       <div class="loader"></div>
-  </div>
+   </div>
    <header class="header">
       <img src="logos/ohmyfood.png" alt="logo ohmyfood">
    </header>
@@ -30,10 +29,6 @@
          <p class="section-sous-tittle"> Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
          <button class="button-explorer">Explorer nos restaurants</button>
       </div>
-
-
-
-
       <div class="fonctionnement">
          <h2 class="section-fonctionnement">Fonctionnement</h2>
          <div class="button-fonctionnement">
@@ -84,14 +79,13 @@
                      </div>
                   </a>
 
-                  <div class="container">
-                     <input type="checkbox" id="heart-checkbox" class="heart-checkbox" />
-                     <label for="heart-checkbox" class="heart">
-                        <i class="far fa-heart"></i>
+                  <div class="contenu">
+                     <i class="far fa-heart heart">
                         <i class="fas fa-heart heart-color"></i>
-                     </label>
+                     </i>
                   </div>
                </article>
+
 
                <article class="card">
                   <a class="underline-link" href="restaurants/la-note-enchantee.html">
@@ -109,7 +103,7 @@
                      </div>
                   </a>
                   <div class="container">
-                     <input type="checkbox" id="heart-checkbox1" class="heart-checkbox" />
+                     <input type="checkbox" id="heart-checkbox1" class="heart-checkbox">
                      <label for="heart-checkbox1" class="heart">
                         <i class="far fa-heart"></i>
                         <i class="fas fa-heart heart-color"></i>
@@ -129,7 +123,7 @@
                      </div>
                   </a>
                   <div class="container">
-                     <input type="checkbox" id="heart-checkbox2" class="heart-checkbox" />
+                     <input type="checkbox" id="heart-checkbox2" class="heart-checkbox">
                      <label for="heart-checkbox2" class="heart">
                         <i class="far fa-heart"></i>
                         <i class="fas fa-heart heart-color"></i>
@@ -148,7 +142,7 @@
                      </div>
                   </a>
                   <div class="container">
-                     <input type="checkbox" id="heart-checkbox3" class="heart-checkbox" />
+                     <input type="checkbox" id="heart-checkbox3" class="heart-checkbox">
                      <label for="heart-checkbox3" class="heart">
                         <i class="far fa-heart"></i>
                         <i class="fas fa-heart heart-color"></i>
@@ -161,22 +155,21 @@
    </main>
    <footer>
       <div class="footer-info">
-         <span class="footer-fa">
+         <span class="footer-fa"></span>
             <i class="fas fa-utensils"></i>
-            <p class="footer-restaurant"></p> Proposer un restaurant
-         </span>
-         <span class="footer-restaurant"></span>
-         <span class="footer-fa">
-            <i class="fas fa-hands-helping"></i>
-            Devenir partenaire
-         </span>
-         <span>
-            <a>Mentions légales</a>
-         </span>
-         <span>
-            <a>Contact</a>
-         </span>
-         <img src="logos/ohmyfood@2x.svg" alt="logo ohmyfood">
+            <span class="footer-restaurant">Proposer un restaurant</span>
+            <span class="footer-restaurant"></span>
+            <span class="footer-fa">
+               <i class="fas fa-hands-helping"></i>
+               Devenir partenaire
+            </span>
+            <span>
+               <a>Mentions légales</a>
+            </span>
+            <span>
+               <a>Contact</a>
+            </span>
+            <img src="logos/ohmyfood@2x.svg" alt="logo ohmyfood">
       </div>
    </footer>
 </body>
