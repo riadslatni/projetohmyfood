@@ -42,39 +42,26 @@
   }
 }
 
-.heart-checkbox, .heart .fas {
-  display: none;
-}
-
-.heart-checkbox:checked + .heart {
-  .far {
-    display: none;
-  }
-
-  .fas {
-    display: inline;
-  }
-}
-
 .fa-heart {
-  font-size: 30px;
+  font-size: 22px;
 }
 
-.container {
-  font-size: 24px;
-  position: relative;
-  bottom: 70px;
-  margin-left: 430px;
-  background: none;
-  padding: 0;
-  cursor: pointer;
+
+.container-index {
+  display: flex;
+  top: 50%;
+  left: 50%;
+justify-content: space-between ;
+  // transform: translate(-50%, -50%);
+
 }
 
 .heart {
+  margin-top: 8px;
+  margin-right: 12px;
   position: relative;
   z-index: 1;
   cursor: pointer;
-  -webkit-text-stroke: 2px white;
 }
 
 .heart-color {
@@ -87,20 +74,30 @@
   -webkit-text-fill-color: transparent;
   opacity: 0;
   transform: scale(0);
-  transition: 0.3s ease;
+  transition: .3s ease;
+  margin-left: 0px;
+  margin-top: 0px;
 }
 
-.heart-checkbox:checked + .heart .heart-color {
-  opacity: 1;
+.heart:hover .heart-color {
   transform: scale(1);
+  opacity: 1;
 }
+
+
+.heart:hover{
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px white;
+}
+
 
 body {
   margin: 0px;
 }
 
 .header {
-  height: 96px;
   background: #FFFFFF;
   text-align: center;
 }
@@ -118,6 +115,7 @@ body {
   box-sizing: border-box;
   justify-content: center;
   background: lightgray;
+
 }
 
 .localisation {
@@ -127,6 +125,12 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  border: none;
+  background-color: #D3D3D3;
+}
+
+.localisation:focus {
+  outline: none;
 }
 
 .fa-map-marker-alt {
@@ -180,6 +184,7 @@ body {
   height: 250px;
 }
 
+
 .button-explorer {
   width: 218px;
   height: 50px;
@@ -198,10 +203,6 @@ body {
 
 .body {
   margin: 0;
-}
-
-.fonctionnement {
-  padding: 0px 20px;
 }
 
 .button-fonctionnement {
@@ -242,7 +243,8 @@ body {
   font-weight: 700;
   line-height: normal;
   padding-top: 25px;
-  margin-left: 22%;
+  margin-left: 23%;
+ 
 }
 
 .button-fonctionnement button {
@@ -265,14 +267,16 @@ body {
   padding: 20px;
 }
 
-.restaurant {
+.restaurant-4-index {
   height: 28px;
   font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: normal;
   letter-spacing: 0em;
-  margin-left: 22%;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  margin-left: 23%;
 }
 
 .restaurant-list {
@@ -294,6 +298,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
+  font-family: Roboto;
 }
 
 .restaurant-card--image {
@@ -381,18 +386,12 @@ body {
   font-weight: 500;
   line-height: normal;
   height: 15%;
-  padding: 30px 25px;
+  width: 100%;
   align-items: flex-end;
   gap: 16px;
   flex-shrink: 0;
   background: var(--Grey, #353535);
   justify-content: flex-end;
-
-  span {
-    p, a {
-      margin-top: 5px;
-    }
-  }
 }
 
 .footer-fa {
@@ -408,14 +407,22 @@ body {
 .footer-info img {
   width: 100px;
   height: auto;
-  margin-left: 70px;
 }
 
 .underline-link {
   text-decoration: none;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+.footerLink {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  color: #FFFFFF;
+  text-decoration: none;
+
+}
+
+@media (min-width: 500px) and (max-width: 1024px) {
   .header {
     height: auto;
     padding: 10px;
@@ -441,26 +448,10 @@ body {
     }
   }
 
-  .section-fonctionnement {
-    width: 100%;
-    height: 35px;
-    color: #000;
-    font-family: Roboto;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding-top: 25px;
-    margin-left: 0;
-  }
-
-  .restaurant {
-    margin-left: 2%;
-  }
-
   .restaurant-card {
     margin-left: 20px;
     margin-right: 20px;
+    font-family: Roboto;
   }
 
   .restaurant-card--image {
@@ -503,36 +494,94 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
+  }
 
-    img {
-      margin-left: 0;
-    }
+  .footer-info img {
+    margin-left: 15px;
   }
 
   img {
     order: -1;
-    margin-bottom: 22px;
+
   }
 
   .footer-info span {
-    margin-bottom: 5px;
+    margin-left: 15px;
   }
+
+
+.restaurant-4-index {
+  margin-left:1%;
 }
 
-@media (max-width: 767.98px) {
-  .container {
-    margin-left: 500px;
-  }
 
-  .header {
-    height: auto;
-    padding: 10px;
+.infos {
+  width: 100%;
+
+}
+
+.section-fonctionnement {
+  width: 275px;
+  height: 35px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 25px;
+  margin-left: 1%;
+}
+
+.fa-heart {
+  font-size: 22px;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heart {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+ 
+}
+
+.heart-color {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: scale(0);
+  transition: .3s ease;
+  margin-left: 0px;
+}
+
+.heart:hover .heart-color {
+  transform: scale(1);
+  opacity: 1;
+}
+}
+
+@media (min-width: 320px) and (max-width:500px) {
+  .header img {
+    width: 50%;
+    margin-top: 20px;
   }
 
   .info-localisation {
     height: auto;
     padding: 10px;
     text-align: left;
+
   }
 
   .infos {
@@ -627,7 +676,7 @@ body {
     font-weight: 700;
     line-height: normal;
     padding-top: 25px;
-    margin-left: 0px;
+    margin-left: 15px;
   }
 
   .restaurant-card {
@@ -635,6 +684,13 @@ body {
     flex-direction: column;
     margin-left: 20px;
     margin-right: 20px;
+    font-family: Roboto;
+  }
+
+  .restaurant-4-index {
+    margin-left: 15px;
+    padding-bottom: 20px;
+    margin-top: 50px;
   }
 
   .restaurant-card-coeur button {
@@ -647,11 +703,11 @@ body {
     img {
       height: 231px;
       flex-shrink: 0;
+
     }
   }
 
   .restaurant {
-    padding-left: 20px;
     margin-left: 0%;
   }
 
@@ -665,6 +721,44 @@ body {
     flex-direction: column;
     gap: 20px;
   }
+  .fa-heart {
+    font-size: 22px;
+   
+  }
+  
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .heart {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 14px;
+  }
+  
+  .heart-color {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transform: scale(0);
+    transition: .3s ease;
+    margin-left: 0px;
+  }
+  
+  .heart:hover .heart-color {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
 
   .footer-info {
     align-items: flex-start;
@@ -672,19 +766,19 @@ body {
     flex-direction: column;
     gap: 5px;
 
+
     img {
-      margin-left: 0px;
+      margin-left: 15px;
+      margin-bottom: 10px;
     }
+  }
+
+  span.span-footer{
+    margin-left: 15px;
   }
 
   img {
     order: -1;
-    margin-bottom: 22px;
-  }
-
-  .footer-info span {
-    margin-bottom: 5px;
   }
 }
-
 /*# sourceMappingURL=index.css.map */
