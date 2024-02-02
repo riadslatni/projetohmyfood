@@ -1,3 +1,4 @@
+
 .menu-top {
   display: flex;
   align-items: center;
@@ -20,6 +21,33 @@ header {
   // width: 100%;
 }
 
+.menu {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f6f6;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  margin-top: -50px;
+  width: 50%;
+  justify-content: center;
+  margin-left: 25%;
+}
+
+.plat-p {
+  overflow: hidden;
+  color: #000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+
 .restaurant {
   color: var(--Black, #101010);
   font-family: Shrikhand;
@@ -28,12 +56,14 @@ header {
   font-weight: 400;
   line-height: normal;
 
+
+
   img {
     width: 100%;
-    height: 300px;
     object-fit: cover;
   }
 }
+
 
 .menu-section-entre {
   display: flex;
@@ -82,13 +112,28 @@ h3 {
 .ingredients-prix {
   display: flex;
   justify-content: space-between;
+  color: #353535;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 
 }
 
 .ingredients {
   margin-top: 1%;
   margin-bottom: 1%;
+  overflow: hidden;
+  color: #000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-family: Roboto;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .prix {
@@ -99,14 +144,6 @@ h3 {
   font-weight: 700;
 }
 
-.menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #d3d3d3;
-  border-radius: 20px;
-
-}
 
 .menu-tittle {
   color: var(--Black, #101010);
@@ -133,7 +170,6 @@ h3 {
   background-size: 200% 100%;
   background-position: left bottom;
   transition: background-position 0.5s ease-out;
-
   &::after {
     content: "\f058";
     color: white;
@@ -176,6 +212,7 @@ h3 {
   box-shadow: 0px 4.01149px 15px 0px rgba(0, 0, 0, 0.1);
   border: 2px solid transparent;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .footer-info {
@@ -227,6 +264,16 @@ h3 {
   }
 }
 
+.heart {
+  margin-left: 40px;
+  margin-bottom: 5px;
+}
+
+.container-menu-restaurant {
+  margin-bottom: 5px;
+}
+
+
 
 @media (min-width: 500px) and (max-width: 1024px) {
 
@@ -234,8 +281,17 @@ h3 {
     margin-bottom: 10px;
   }
 
+  .header-logo-arrow img {
+    margin-left: 25%;
+  }
+
   .fa-heart {
     font-size: 22px;
+  }
+
+  .menu {
+    width: 100%;
+    margin-left: 0%;
   }
 
   .container-menu {
@@ -285,6 +341,7 @@ h3 {
 
 @media (min-width: 320px) and (max-width:499px) {
 
+
   .header-logo-arrow {
     img {
       margin-left: 20%;
@@ -308,12 +365,14 @@ h3 {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     margin-top: -60px;
+    margin-left: -0%;
   }
 
   .button-menu {
     display: flex;
     justify-content: center;
     width: 100%;
+
 
     &::after {
       content: "\f058";
@@ -389,5 +448,4 @@ h3 {
   span.span-footer {
     margin-left: 15px;
   }
-
 }
