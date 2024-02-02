@@ -763,6 +763,7 @@ header {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 300px;
 }
 
 .menu-section-entre {
