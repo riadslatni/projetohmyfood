@@ -176,11 +176,13 @@ body {
 }
 
 .button-explorer {
+  /* Vos styles existants */
   width: 218px;
   height: 50px;
   border-radius: 25px;
+  border-radius: 25px;
   background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-  box-shadow: 1px 11px 14px 0px rgba(130, 130, 130, 0.38);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
@@ -191,6 +193,12 @@ body {
   border: 2px solid transparent;
   cursor: pointer;
   text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.button-explorer:hover {
+  background: var(--Button-Hover-Gradient, linear-gradient(193deg, #B590E7 -11.44%, #FFA8E8 123.93%));
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .body {
@@ -556,7 +564,6 @@ body {
     padding-bottom: 30px;
     background-color: #EAEAEA;
     margin: 0px;
-    display: contents;
     padding-top: 39px;
     padding: 0 20px;
   }
@@ -914,6 +921,11 @@ h3 {
   margin-top: 20px;
 }
 
+.button-commander:hover {
+  background: var(--Button-Hover-Gradient, linear-gradient(193deg, #B590E7 -11.44%, #FFA8E8 123.93%));
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
 .footer-info {
   padding-bottom: 30px;
   display: flex;
@@ -1063,7 +1075,7 @@ h3 {
   .menu-section-entre,
   .menu-section-plat,
   .menu-section-dessert {
-    width: 100%;
+    width: 95%;
   }
   .container-menu {
     position: absolute;

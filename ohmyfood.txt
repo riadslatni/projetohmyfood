@@ -1,6 +1,6 @@
-https://github.com/riadslatni/riadslatni.git
+https://github.com/riadslatni/projetohmyfood.git
 
 
 
 
-https://riadslatni.github.io/projetohmyfood/ohmyfood/src/restaurants/la-palette-du-gout.html
+
